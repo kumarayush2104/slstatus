@@ -7,7 +7,7 @@ const unsigned int interval = 1000;
 static const char unknown_str[] = "n/a";
 
 /* maximum output string length */
-#define MAXLEN 2048
+#define MAXLEN 1024
 
 /*
  * function            description                     argument (example)
@@ -63,8 +63,8 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-        { vol_perc, "[VOL: %s]", "/dev/mixer" },
-        { wifi_essid, " [WLAN: %s] ", "wlan0"        },
+        { vol_perc, "     [VOL:%s]", "/dev/mixer" },
+        { wifi_essid, " [WLAN:%s] ", "wlan0"        },
         { battery_perc, "[BAT:%s]", "BAT0" },
 	{ datetime, " [%s] ",           "%a %b %d, %H:%M" },
 };
