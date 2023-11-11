@@ -66,7 +66,7 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format          argument */
 	{ hostname, "Arch Linux  ", NULL },
-	{ vol_perc, "  \uf028 %s%%   ", "/dev/mixer" },
+	{ vol_perc, "  \uf028 %s   ", "Master" },
 	{ wifi_essid, "  \uf1eb %s   ", "wlan0" },
 	{ datetime, "  \uf017 %s", "%d/%m/%y, %H:%M" },
 };
